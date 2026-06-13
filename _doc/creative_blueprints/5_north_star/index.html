@@ -1,0 +1,100 @@
+<style>
+.mode-landscape .sl-body { flex-direction: row; }
+.mode-portrait .sl-body { flex-direction: column; }
+.mode-landscape .sl-col { width: 50%; }
+.mode-portrait .sl-col { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="flex-shrink-0 mb-5">
+      <div class="flex items-center gap-2 mb-1">
+        <div class="w-1 h-4 bg-red-500 rounded-sm"></div>
+        <span class="text-xs font-bold tracking-[0.2em] text-red-500 uppercase">North Star</span>
+      </div>
+      <h2 class="text-3xl font-black text-slate-900">Weekly Verified Operations</h2>
+      <p class="text-sm text-slate-500 mt-1">The metric BLACKTOC lives by — creator payout events processed, every week.</p>
+    </div>
+
+    <!-- Body -->
+    <div class="sl-body flex flex-1 gap-5 min-h-0">
+
+      <!-- Left: Operation definition + Formula -->
+      <div class="sl-col flex flex-col gap-4">
+
+        <!-- Operation definition -->
+        <div class="bg-slate-900 rounded-2xl p-5 flex-shrink-0">
+          <div class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-2">Verified Operation</div>
+          <div class="text-base font-black text-white mb-2">Creator Payout Processed</div>
+          <div class="text-xs text-slate-400 leading-relaxed">A creator earns money from views, tips, gifts, or subscriptions and receives a verified payout to their wallet. This is BLACKTOC's core value-delivery event.</div>
+        </div>
+
+        <!-- Formula -->
+        <div class="bg-slate-50 rounded-2xl p-5 flex-1">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-3">WVO Formula</div>
+          <div class="flex flex-col gap-2.5">
+            <div class="flex items-start gap-2">
+              <span class="inline-flex items-center gap-1 bg-amber-50 border border-amber-200 text-amber-800 text-xs font-medium px-2 py-1 rounded-full flex-shrink-0">⚙ Assumption</span>
+              <span class="text-sm text-slate-700 mt-0.5"><strong>1,000</strong> active creators posting weekly</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="inline-flex items-center gap-1 bg-amber-50 border border-amber-200 text-amber-800 text-xs font-medium px-2 py-1 rounded-full flex-shrink-0">⚙ Assumption</span>
+              <span class="text-sm text-slate-700 mt-0.5"><strong>1</strong> payout cycle per creator per week</span>
+            </div>
+            <div class="h-px bg-slate-200 my-1"></div>
+            <div class="bg-red-500 rounded-xl px-4 py-2.5 flex items-center justify-between">
+              <span class="text-sm font-bold text-white">1,000 × 1 =</span>
+              <span class="text-xl font-black text-white">1,000 payouts / week</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Value projection -->
+      <div class="sl-col flex flex-col gap-4">
+
+        <!-- Value per week -->
+        <div class="bg-slate-50 rounded-2xl p-5">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-3">Value Projection</div>
+          <div class="text-xs text-slate-500 mb-1 leading-relaxed">
+            <span class="inline-flex items-center gap-1 bg-amber-50 border border-amber-200 text-amber-800 text-xs font-medium px-1.5 py-0.5 rounded-full">⚙</span>
+            &nbsp;1,000 creators × 10,000 avg views/week = 10M total views
+          </div>
+          <div class="text-xs text-slate-500 mb-3 leading-relaxed">
+            10,000,000 ÷ 1,000 × $0.12 = <strong class="text-slate-800">$1,200 distributed to creators / week</strong>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-green-500 rounded-xl p-3 text-center">
+              <div class="text-xl font-black text-white">$1,200</div>
+              <div class="text-xs text-green-100 mt-0.5">per week</div>
+            </div>
+            <div class="bg-green-700 rounded-xl p-3 text-center">
+              <div class="text-xl font-black text-white">$62,400</div>
+              <div class="text-xs text-green-200 mt-0.5">per year</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- vs TikTok -->
+        <div class="bg-slate-50 rounded-2xl p-5 flex-1">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">vs TikTok (Same Scale)</div>
+          <div class="text-xs text-slate-500 mb-3 leading-relaxed">10M views × $0.02/1K = $200/week → $10,400/year to creators</div>
+          <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+            <div class="text-xs font-bold text-red-600 mb-1 uppercase tracking-wide">BLACKTOC creator advantage</div>
+            <div class="text-3xl font-black text-red-600">+$52,000</div>
+            <div class="text-xs text-red-400 mt-0.5">more per year to creators at this scale</div>
+          </div>
+        </div>
+
+        <!-- Framing label -->
+        <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-2.5 flex-shrink-0">
+          <div class="text-xs text-amber-700 font-medium leading-relaxed">📌 Projected impact — based on your inputs. Adjust assumption chips above to model your real scale.</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
