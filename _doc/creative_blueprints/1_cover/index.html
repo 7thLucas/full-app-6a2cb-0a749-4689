@@ -1,0 +1,72 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left { width: 52%; }
+.mode-landscape .sl-right { width: 48%; }
+.mode-portrait .sl-left { width: 100%; flex: 1; }
+.mode-portrait .sl-right { width: 100%; height: 40%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex w-full h-full">
+
+    <!-- Left: Brand + Copy -->
+    <div class="sl-left flex flex-col justify-between p-12 bg-white">
+      <div>
+        <!-- Wordmark -->
+        <div class="flex items-center gap-3 mb-10">
+          <div class="w-1.5 h-9 bg-red-500 rounded-sm flex-shrink-0"></div>
+          <span class="text-base font-black tracking-[0.3em] text-slate-900 uppercase">BLACKTOC</span>
+        </div>
+
+        <!-- Editorial headline -->
+        <h1 class="text-5xl font-black leading-tight text-slate-900 mb-7">
+          The Platform<br/>That Pays<br/>Creators What<br/>They're Worth
+        </h1>
+
+        <!-- Tagline bullets -->
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 rounded-full bg-red-500 flex-shrink-0"></div>
+            <span class="text-sm font-semibold text-slate-600">$0.12 per 1K views — 6× TikTok's rate</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 rounded-full bg-red-500 flex-shrink-0"></div>
+            <span class="text-sm font-semibold text-slate-600">Day-1 monetization, no follower minimum</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 rounded-full bg-red-500 flex-shrink-0"></div>
+            <span class="text-sm font-semibold text-slate-600">Creator-owned content · Instant payouts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Attribution -->
+      <div>
+        <div class="h-px bg-slate-100 mb-4"></div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: Visual Panel -->
+    <div class="sl-right relative overflow-hidden bg-slate-900">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=confident%20young%20content%20creator%20holding%20phone%20showing%20earnings%20notification%2C%20dark%20cinematic%20studio%20lighting%2C%20moody%20neon%20red%20glow%2C%20professional%20photography%2C%20high%20contrast%2C%20bokeh%20background"
+        class="w-full h-full object-cover"
+        style="opacity:0.72"
+        alt="Creator on BLACKTOC"
+      />
+      <!-- Earnings float card -->
+      <div class="absolute bottom-8 left-6 bg-white rounded-2xl shadow-2xl p-4" style="min-width:172px">
+        <div class="text-xs font-medium text-slate-400 uppercase tracking-wide mb-1">This week</div>
+        <div class="text-2xl font-black text-slate-900 mb-1">$1,240.00</div>
+        <div class="text-xs font-bold text-green-600">↑ 6× more than TikTok</div>
+      </div>
+      <!-- Category badge -->
+      <div class="absolute top-6 right-6 bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+        Creator Economy
+      </div>
+    </div>
+
+  </div>
+</section>
